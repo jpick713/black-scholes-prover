@@ -32,7 +32,6 @@ pub fn main() {
     for i in 0..4 {
         for j in 0..3 {
             let t: f64 = tenors[i];
-            let s: f64 = 100.0;
             let factor: f64 = strike_factors[j] as f64;
             call_prices[i][j] = call_option_price(s, factor, r, t, v);
         }
